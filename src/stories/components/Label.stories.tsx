@@ -35,3 +35,11 @@ export const Basic : Story = {
     }
 }
 
+export const AllCaps : Story = {
+    args: {
+        label: 'Basic',
+        size: 'normal',
+        allCaps: true,
+    }
+}
+
