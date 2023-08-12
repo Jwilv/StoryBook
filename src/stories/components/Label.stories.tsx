@@ -1,15 +1,37 @@
+import { Meta, StoryObj } from "@storybook/react";
 import { Label } from "../../components";
 
 
-export default {
+const meta  = {
     title:"UI/Label",
-    component : Label
+    component : Label,
+    tags: ['autodocs'],
+} satisfies Meta<typeof Label>
+
+export default meta
+
+type Story = StoryObj<typeof meta>
+
+// const Template: StoryObj< typeof Label> = (args) => <Label {...args} /> 
+
+export const Primary : Story = {
+    args: {
+        label: 'Promary',
+        size: 'h1'
+    }
 }
 
-const Template = () => <Label /> 
+export const Secundary : Story = {
+    args: {
+        label: 'Secundary',
+        size: 'h2'
+    }
+}
 
-export const Primary = Template.bind({});
+export const Basic : Story = {
+    args: {
+        label: 'Basic',
+        size: 'normal'
+    }
+}
 
-export const Secundary = Template.bind({});
-
-export const Basic = Template.bind({});
