@@ -16,22 +16,33 @@ type Story = StoryObj<typeof meta>
 
 export const Primary : Story = {
     args: {
-        label: 'Promary',
-        size: 'h1'
+        label: 'Primary',
+        size: 'h1',
+        colorText: 'primary'
     }
 }
 
 export const Secundary : Story = {
     args: {
         label: 'Secundary',
-        size: 'h2'
+        size: 'h2',
+        colorText: 'secondary',
+    }
+}
+
+export const Tertiary : Story = {
+    args: {
+        label: 'Basic',
+        size: 'normal',
+        colorText: 'tertiary',
     }
 }
 
 export const Basic : Story = {
     args: {
         label: 'Basic',
-        size: 'normal'
+        size: 'normal',
+        colorText: 'primary',
     }
 }
 
@@ -40,6 +51,7 @@ export const AllCaps : Story = {
         label: 'Basic',
         size: 'normal',
         allCaps: true,
+        colorText: 'primary',
     }
 }
 
