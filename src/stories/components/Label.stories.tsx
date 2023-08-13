@@ -58,3 +58,13 @@ export const AllCaps : Story = {
     }
 }
 
+export const FontColor : Story = {
+    args: {
+        label: 'Custom Font Color',
+        size: 'h1',
+        allCaps: true,
+        colorText: 'primary',
+        backgroundColor: '#93bfb6'
+    }
+}
+

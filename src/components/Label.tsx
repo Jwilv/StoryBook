@@ -23,6 +23,10 @@ export interface LabelProps {
    * this is the color of Label
    */
   colorText: LabelColor;
+  /**
+   * this is the background color of label
+   */
+  backgroundColor?: string;
 }
 
 export const Label = ({
@@ -30,9 +34,10 @@ export const Label = ({
   size = 'normal',
   allCaps = false,
   colorText = 'primary',
+  backgroundColor = 'none',
 }: LabelProps) => {
   return (
-    <label className={`${size} text-${colorText}`}>
+    <label style={{ backgroundColor }} className={`${size} text-${colorText}`}>
       {allCaps ? label.toUpperCase() : label}
     </label>
   )
