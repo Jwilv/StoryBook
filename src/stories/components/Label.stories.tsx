@@ -6,6 +6,9 @@ const meta  = {
     title:"UI/Label",
     component : Label,
     tags: ['autodocs'],
+    argTypes: {
+        size: { control : 'select' },
+    }
 } satisfies Meta<typeof Label>
 
 export default meta
