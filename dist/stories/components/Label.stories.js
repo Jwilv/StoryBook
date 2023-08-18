@@ -1,64 +1,51 @@
-import { Meta, StoryObj } from "@storybook/react";
 import { Label } from "../../components";
-
-
-const meta  = {
-    title:"UI/Label",
-    component : Label,
+const meta = {
+    title: "UI/Label",
+    component: Label,
     tags: ['autodocs'],
     argTypes: {
-        size: { control : 'select' },
+        size: { control: 'select' },
     }
-} satisfies Meta<typeof Label>
-
-export default meta
-
-type Story = StoryObj<typeof meta>
-
+};
+export default meta;
 // const Template: StoryObj< typeof Label> = (args) => <Label {...args} /> 
-
-export const Primary : Story = {
+export const Primary = {
     args: {
         label: 'Primary',
         size: 'h1',
         colorText: 'primary'
     }
-}
-
-export const Secundary : Story = {
+};
+export const Secundary = {
     args: {
         label: 'Secundary',
         size: 'h2',
         colorText: 'secondary',
     }
-}
-
-export const Tertiary : Story = {
+};
+export const Tertiary = {
     args: {
         label: 'Basic',
         size: 'normal',
         colorText: 'tertiary',
     }
-}
-
-export const Basic : Story = {
+};
+export const Basic = {
     args: {
         label: 'Basic',
         size: 'normal',
         colorText: 'primary',
     }
-}
-
-export const AllCaps : Story = {
+};
+export const AllCaps = {
     args: {
         label: 'Basic',
         size: 'normal',
         allCaps: true,
         colorText: 'primary',
     }
-}
-
-export const FontColor : Story = {
+};
+export const FontColor = {
     args: {
         label: 'Custom Font Color',
         size: 'h1',
@@ -66,6 +53,4 @@ export const FontColor : Story = {
         colorText: 'primary',
         backgroundColor: '#93bfb6'
     }
-}
-
-
+};
